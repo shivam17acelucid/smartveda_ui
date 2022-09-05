@@ -25,14 +25,19 @@ function OtpRegister({navigation}) {
       body: JSON.stringify({
         phone: phone,
       }),
-    }).then(response => {
-      const {errors} = response;
-      if (errors) {
-        console.log(errors);
-      } else {
-        navigation.navigate('otpVerify');
-      }
-    });
+    })
+      .then(response => response.json())
+      .then(data => {
+        const {errors} = data;
+        if (errors) {
+          console.log(errors);
+        } else {
+          navigation.navigate('otpVerify');
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   return (

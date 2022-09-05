@@ -43,8 +43,9 @@ function Signup({navigation}) {
         password: password,
       }),
     })
-      .then(response => {
-        const {errors} = response;
+      .then(response => response.json())
+      .then(data => {
+        const {errors} = data;
         if (errors) {
           console.log(errors);
         } else {

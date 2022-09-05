@@ -28,8 +28,9 @@ function OtpVerify({navigation}) {
         otp: otp,
       }),
     })
-      .then(response => {
-        const {errors} = response;
+      .then(response => response.json())
+      .then(jsonres => {
+        const {errors} = jsonres;
         if (errors) {
           console.log(errors);
         } else {
