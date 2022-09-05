@@ -24,15 +24,15 @@ function Signup({navigation}) {
   };
 
   const redirectgoogle = () => {
-    Linking.openURL('https://smartveda.herokuapp.com/auth/google');
+    Linking.openURL('http://3.108.53.130:5000/auth/google');
   };
 
   const redirectFacebook = () => {
-    Linking.openURL('https://smartveda.herokuapp.com/auth/facebook');
+    Linking.openURL('http://3.108.53.130:5000/auth/facebook');
   };
 
   const signup = () => {
-    fetch('https://smartveda.herokuapp.com/signup', {
+    fetch('http://3.108.53.130:5000/signup', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

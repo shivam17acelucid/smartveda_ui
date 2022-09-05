@@ -22,11 +22,11 @@ const SignupOptions = ({navigation}) => {
   };
 
   const redirectgoogle = () => {
-    Linking.openURL('https://smartveda.herokuapp.com/auth/google');
+    Linking.openURL('http://3.108.53.130:5000/auth/google');
   };
 
   const redirectFacebook = () => {
-    Linking.openURL('https://smartveda.herokuapp.com/auth/facebook');
+    Linking.openURL('http://3.108.53.130:5000/auth/facebook');
   };
 
   return (

@@ -16,7 +16,7 @@ function OtpRegister({navigation}) {
   };
 
   const otpRegister = () => {
-    fetch('https://smartveda.herokuapp.com/otpsignup', {
+    fetch('http://3.108.53.130:5000/otpsignup', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
