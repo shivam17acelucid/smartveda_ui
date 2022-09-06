@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Linking,
 } from 'react-native';
+// import {SuccessToast, ErrorToast} from 'react-native-toast-message';
 import CheckBox from '@react-native-community/checkbox';
 
 function Login({navigation}) {
@@ -47,6 +48,10 @@ function Login({navigation}) {
       .then(data => {
         const {errors} = data;
         if (errors) {
+          // ErrorToast.show({
+          //   type: 'error',
+          //   text1: 'Wrong Credentials' || 'Error',
+          // });
           console.log(errors);
         } else {
           navigation.navigate('preferrenceScreen');
