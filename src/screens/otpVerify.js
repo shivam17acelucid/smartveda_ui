@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 
 function OtpVerify({navigation}) {
@@ -33,6 +34,7 @@ function OtpVerify({navigation}) {
         const {errors} = jsonres;
         if (errors) {
           console.log(errors);
+          Alert.alert('Warning', 'Incorrect OTP');
         } else {
           navigation.navigate('preferrenceScreen');
         }

@@ -7,6 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
   Linking,
+  Alert,
 } from 'react-native';
 // import {SuccessToast, ErrorToast} from 'react-native-toast-message';
 import CheckBox from '@react-native-community/checkbox';
@@ -53,6 +54,7 @@ function Login({navigation}) {
           //   text1: 'Wrong Credentials' || 'Error',
           // });
           console.log(errors);
+          Alert.alert('Warning', 'Wrong Credentials');
         } else {
           navigation.navigate('preferrenceScreen');
         }

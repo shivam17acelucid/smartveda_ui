@@ -6,6 +6,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 
 function OtpRegister({navigation}) {
@@ -31,6 +32,7 @@ function OtpRegister({navigation}) {
         const {errors} = data;
         if (errors) {
           console.log(errors);
+          Alert.alert('Warning', 'Enter Valid Mobile Number');
         } else {
           navigation.navigate('otpVerify');
         }
