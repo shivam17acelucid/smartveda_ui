@@ -7,9 +7,10 @@ import {
   TextInput,
   TouchableOpacity,
   Linking,
-  Alert,
+  // Alert,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
+import Toast from 'react-native-simple-toast';
 
 function Signup({navigation}) {
   const [email, setEmail] = useState('');
@@ -49,7 +50,8 @@ function Signup({navigation}) {
         const {errors} = data;
         if (errors) {
           console.log(errors);
-          Alert.alert('Warning', 'Enter Correct Email Address OR Password');
+          // Alert.alert('Warning', 'Enter Correct Email Address OR Password');
+          Toast.show('Enter Correct Email OR Password');
         } else {
           navigation.navigate('login');
         }
