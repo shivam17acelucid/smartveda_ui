@@ -6,8 +6,9 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  Alert,
+  // Alert,
 } from 'react-native';
+import Toast from 'react-native-simple-toast';
 
 function OtpVerify({navigation}) {
   const [otp, setOtp] = useState('');
@@ -34,7 +35,7 @@ function OtpVerify({navigation}) {
         const {errors} = jsonres;
         if (errors) {
           console.log(errors);
-          Alert.alert('Warning', 'Incorrect OTP');
+          Toast.show('Incorrect OTP');
         } else {
           navigation.navigate('preferrenceScreen');
         }
@@ -105,17 +106,16 @@ function OtpVerify({navigation}) {
 }
 const styles = StyleSheet.create({
   container: {
-    width: 428,
-    height: 926,
+    width: 'auto',
+    height: 'auto',
   },
   part1: {
-    padding: 30,
+    alignItems: 'center',
   },
   logo1: {
     width: 77,
     height: 76,
-    marginLeft: 130,
-    marginTop: 40,
+    marginTop: 70,
   },
   header: {
     width: 289,
@@ -139,13 +139,14 @@ const styles = StyleSheet.create({
   inputBoxContainer: {
     display: 'flex',
     flexDirection: 'row',
+    alignSelf: 'center',
   },
   inputBox: {
     marginLeft: 11,
     marginRight: 11,
     marginTop: 50,
-    width: 80,
-    height: 80,
+    width: 65,
+    height: 65,
     borderWidth: 1,
     backgroundColor: '#D6E6D6',
     borderRadius: 10,
