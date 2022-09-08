@@ -133,7 +133,7 @@ function Login({navigation}) {
           style={{
             flexDirection: 'row',
             alignItems: 'center',
-            marginTop: 30,
+            marginTop: 25,
             marginRight: 20,
             width: 330,
             marginLeft: 20,
@@ -178,22 +178,22 @@ function Login({navigation}) {
 }
 const styles = StyleSheet.create({
   container: {
-    height: 926,
-    width: 428,
+    height: 'auto',
+    width: 'auto',
   },
   box1: {
-    paddingTop: 25,
+    alignItems: 'center',
   },
   logo1: {
     width: 77,
     height: 76,
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: 30,
   },
   header: {
     fontFamily: 'Poppins',
-    width: 267,
-    marginTop: 40,
+    width: 'auto',
+    marginTop: 15,
     alignSelf: 'center',
     fontStyle: 'normal',
     fontWeight: '400',
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 30,
+    paddingTop: 25,
   },
   inputImage: {
     position: 'absolute',
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   save: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 20,
+    marginTop: 10,
   },
   remember: {
     height: 23,
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginTop: 25,
+    marginTop: 20,
   },
   innerText: {
     width: 60,
@@ -286,9 +286,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#5A995E',
   },
-  box3: {
-    flex: 1,
-  },
   footerImg: {
     display: 'flex',
     flexDirection: 'row',
@@ -297,7 +294,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   footertext: {
-    marginTop: 15,
+    marginTop: 5,
     textAlign: 'center',
     height: 23,
     fontFamily: 'Poppins',
