@@ -6,8 +6,9 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  Alert,
+  // Alert,
 } from 'react-native';
+import Toast from 'react-native-simple-toast';
 
 function OtpRegister({navigation}) {
   const [phone, setPhone] = useState('');
@@ -32,7 +33,8 @@ function OtpRegister({navigation}) {
         const {errors} = data;
         if (errors) {
           console.log(errors);
-          Alert.alert('Warning', 'Enter Valid Mobile Number');
+          // Alert.alert('Warning', 'Enter Valid Mobile Number');
+          Toast.show('Enter Valid Mobile Number');
         } else {
           navigation.navigate('otpVerify');
         }
@@ -44,14 +46,14 @@ function OtpRegister({navigation}) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.part1}>
+      <View style={styles.box1}>
         <Image
           source={require('../assets/images/Logo1.png')}
           style={styles.logo1}
         />
         <Text style={styles.header}>Sign Up Using Phone</Text>
       </View>
-      <View style={styles.part2}>
+      <View style={styles.box2}>
         <View style={styles.inputbox}>
           <TextInput
             style={styles.input}
@@ -67,7 +69,7 @@ function OtpRegister({navigation}) {
           />
         </View>
       </View>
-      <View style={styles.part3}>
+      <View style={styles.box3}>
         <TouchableOpacity style={styles.button1} onPress={otpRegister}>
           <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
@@ -109,11 +111,11 @@ function OtpRegister({navigation}) {
 }
 const styles = StyleSheet.create({
   container: {
-    width: 428,
-    height: 926,
+    width: 'auto',
+    height: 'auto',
   },
-  part1: {
-    paddingTop: 40,
+  box1: {
+    alignItems: 'center',
   },
   logo1: {
     width: 77,
@@ -133,7 +135,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#000000',
   },
-  part2: {
+  box2: {
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -143,7 +145,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 50,
+    marginTop: 40,
   },
   inputImage: {
     position: 'absolute',
@@ -152,7 +154,7 @@ const styles = StyleSheet.create({
     left: 20,
   },
   input: {
-    width: 344,
+    width: 320,
     height: 50,
     borderWidth: 1,
     backgroundColor: '#D6E6D6',
@@ -163,19 +165,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#00000',
   },
-  part3: {
+  box3: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   button1: {
-    width: 342,
+    width: 320,
     elevation: 8,
     backgroundColor: '#5A995E',
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
     alignSelf: 'center',
-    marginTop: 80,
+    marginTop: 50,
   },
   buttonText: {
     width: 58,
@@ -200,7 +202,7 @@ const styles = StyleSheet.create({
     color: '#5A995E',
   },
   footerImg: {
-    marginTop: 30,
+    marginTop: 25,
     display: 'flex',
     flexDirection: 'row',
     marginRight: 10,
@@ -212,7 +214,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 22,
     color: '#000000',
-    marginTop: 50,
+    marginTop: 20,
   },
 });
 export default OtpRegister;
