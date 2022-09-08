@@ -51,7 +51,7 @@ function Signup({navigation}) {
         if (errors) {
           console.log(errors);
           // Alert.alert('Warning', 'Enter Correct Email Address OR Password');
-          Toast.show('Enter Correct Email OR Password');
+          Toast.show('Email Already Exists');
         } else {
           navigation.navigate('login');
         }
@@ -122,7 +122,7 @@ function Signup({navigation}) {
           style={{
             flexDirection: 'row',
             alignItems: 'center',
-            marginTop: 30,
+            marginTop: 25,
             marginRight: 20,
             width: 330,
             marginLeft: 20,
@@ -164,34 +164,34 @@ function Signup({navigation}) {
 }
 const styles = StyleSheet.create({
   container: {
-    height: 926,
-    width: 428,
+    height: 'auto',
+    width: 'auto',
   },
   box1: {
-    paddingTop: 25,
+    alignItems: 'center',
   },
   logo1: {
     width: 77,
     height: 76,
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: 25,
   },
   header: {
     fontFamily: 'Poppins',
-    width: 237,
-    marginTop: 40,
-    alignSelf: 'center',
+    width: 'auto',
+    marginTop: 15,
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: 40,
     lineHeight: 60,
     textAlign: 'center',
     color: '#000000',
+    textShadow: '0 4 4 rgba(0, 0, 0, 0.25)',
   },
   box2: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 10,
   },
   inputbox: {
     display: 'flex',
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 30,
+    paddingTop: 25,
   },
   inputImage: {
     position: 'absolute',
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   save: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 20,
+    marginTop: 15,
   },
   remember: {
     height: 23,
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginTop: 25,
+    marginTop: 20,
   },
   innerText: {
     width: 60,
@@ -282,7 +282,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   footertext: {
-    marginTop: 30,
+    marginTop: 15,
     textAlign: 'center',
     height: 23,
     fontFamily: 'Poppins',
