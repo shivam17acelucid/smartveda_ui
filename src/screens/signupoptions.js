@@ -191,9 +191,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
   },
-  box3: {},
   signupButton: {
     width: 'auto',
+    elevation: 8,
     height: 47,
     backgroundColor: '#5A995E',
     borderRadius: 50,
@@ -203,7 +203,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingLeft: 60,
     paddingRight: 60,
-    // marginLeft: 35,
   },
   buttonText: {
     width: 140,
