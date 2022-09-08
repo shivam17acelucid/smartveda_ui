@@ -9,15 +9,20 @@ import {
   // Alert,
 } from 'react-native';
 import Toast from 'react-native-simple-toast';
+import {useDispatch} from 'react-redux';
+import {setMobile} from '../store/createSlice';
 
 function OtpRegister({navigation}) {
   const [phone, setPhone] = useState('');
+
+  const dispatch = useDispatch();
 
   const redirectLogin = () => {
     navigation.navigate('login');
   };
 
   const otpRegister = () => {
+    dispatch(setMobile(phone));
     fetch('http://3.108.53.130:5000/otpsignup', {
       method: 'POST',
       headers: {

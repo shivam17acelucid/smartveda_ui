@@ -9,6 +9,8 @@ import {
   // Alert,
 } from 'react-native';
 import Toast from 'react-native-simple-toast';
+import {useSelector} from 'react-redux';
+import {setMobile} from '../store/createSlice';
 
 function OtpVerify({navigation}) {
   const [otp, setOtp] = useState('');
@@ -16,6 +18,8 @@ function OtpVerify({navigation}) {
   const [otp2, setOtp2] = useState('');
   const [otp3, setOtp3] = useState('');
   const [otp4, setOtp4] = useState('');
+
+  const {mobile} = useSelector(state => state.mobile);
 
   const otpVerify = () => {
     let data = otp1 + otp2 + otp3 + otp4;
@@ -27,7 +31,7 @@ function OtpVerify({navigation}) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        // phone: phone,
+        phone: mobile,
         otp: otp,
       }),
     })
@@ -56,7 +60,7 @@ function OtpVerify({navigation}) {
       </View>
       <View>
         <Text style={styles.header}>OTP Sent to your Phone :</Text>
-        <Text style={styles.number}>9520373042</Text>
+        <Text style={styles.number}>{mobile}</Text>
       </View>
       <View style={styles.inputBoxContainer}>
         <TextInput
