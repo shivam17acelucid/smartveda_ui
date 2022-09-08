@@ -16,6 +16,7 @@ function Login({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
+  const [hidePass, setHidePass] = useState(true);
 
   const redirectSignup = () => {
     navigation.navigate('signup');
@@ -31,6 +32,10 @@ function Login({navigation}) {
 
   const redirectOtpSignup = () => {
     navigation.navigate('otpRegister');
+  };
+
+  const showPassword = () => {
+    setHidePass(!hidePass);
   };
 
   const login = () => {
@@ -101,17 +106,16 @@ function Login({navigation}) {
             onChangeText={setPassword}
             value={password}
             placeholder="Password"
-            secureTextEntry
+            secureTextEntry={hidePass ? true : false}
             placeholderStyle={styles.inputtext}
           />
           <Image
             source={require('../assets/images/UnlockPrivate.png')}
             style={styles.inputImage}
           />
-          <Image
-            source={require('../assets/images/Hide.png')}
-            style={styles.inputImage2}
-          />
+          <TouchableOpacity onPress={showPassword} style={styles.inputImage2}>
+            <Image source={require('../assets/images/Hide.png')} />
+          </TouchableOpacity>
         </View>
         <View style={styles.save}>
           <CheckBox

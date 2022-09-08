@@ -27,6 +27,7 @@ function OtpVerify({navigation}) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        // phone: phone,
         otp: otp,
       }),
     })
