@@ -10,10 +10,8 @@ import {
 } from 'react-native';
 import Toast from 'react-native-simple-toast';
 import {useSelector} from 'react-redux';
-import {setMobile} from '../store/createSlice';
 
 function OtpVerify({navigation}) {
-  const [otp, setOtp] = useState('');
   const [otp1, setOtp1] = useState('');
   const [otp2, setOtp2] = useState('');
   const [otp3, setOtp3] = useState('');
@@ -23,7 +21,6 @@ function OtpVerify({navigation}) {
 
   const otpVerify = () => {
     let data = otp1 + otp2 + otp3 + otp4;
-    setOtp(data);
     fetch('http://3.108.53.130:5000/otpverify', {
       method: 'POST',
       headers: {
@@ -32,7 +29,7 @@ function OtpVerify({navigation}) {
       },
       body: JSON.stringify({
         phone: mobile,
-        otp: otp,
+        otp: data,
       }),
     })
       .then(response => response.json())
@@ -46,7 +43,8 @@ function OtpVerify({navigation}) {
         }
       })
       .catch(err => {
-        console.log(err);
+        console.log(err, 'kuch galat hai');
+        Toast.show('Something went Wrong.');
       });
   };
 

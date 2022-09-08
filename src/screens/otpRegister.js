@@ -46,6 +46,7 @@ function OtpRegister({navigation}) {
       })
       .catch(err => {
         console.log(err);
+        Toast.show('Enter Valid Mobile Number');
       });
   };
 

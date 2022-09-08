@@ -1,12 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 
-const PrefScreen = ({route}) => {
-  const {id} = route.params;
+const PrefScreen = () => {
   const welcome = () => {};
   return (
     <View style={styles.container}>
-      <View style={styles.part1}>
+      <View style={styles.box1}>
         <Image
           source={require('../assets/images/Logo1.png')}
           style={styles.logo1}
@@ -19,39 +18,39 @@ const PrefScreen = ({route}) => {
         </View>
         <View>
           <View style={styles.label1}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
               <Text style={styles.optionLabel}>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
               <Text>Diabetes</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{marginLeft: 180, marginTop: 30}}>
+          <TouchableOpacity style={{marginLeft: 180, marginTop: 20}}>
             <Text style={styles.optionLabel}>General Welness</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{marginLeft: 60, marginTop: 30}}>
+          <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
             <Text style={styles.optionLabel}>Blood Pressure</Text>
           </TouchableOpacity>
           <View style={{display: 'flex', flexDirection: 'row'}}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
               <Text style={styles.optionLabel}>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
               <Text style={styles.optionLabel}>Vitality</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{alignSelf: 'center', marginTop: 30}}>
+          <TouchableOpacity style={{alignSelf: 'center', marginTop: 20}}>
             <Text style={styles.optionLabel}>Digestion</Text>
           </TouchableOpacity>
           <View style={{display: 'flex', flexDirection: 'row'}}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
               <Text>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 30}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
               <Text style={styles.optionLabel}>Know Your Body</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{alignSelf: 'center', marginTop: 30}}>
+          <TouchableOpacity style={{alignSelf: 'center', marginTop: 20}}>
             <Text style={styles.optionLabel}>Weight Management</Text>
           </TouchableOpacity>
         </View>
@@ -67,21 +66,19 @@ const PrefScreen = ({route}) => {
 };
 const styles = StyleSheet.create({
   container: {
-    width: 428,
-    height: 926,
+    width: 'auto',
+    height: 'auto',
   },
-  part1: {
-    paddingTop: 30,
-    paddingLeft: 40,
+  box1: {
+    alignItems: 'center',
   },
   logo1: {
     width: 77,
     height: 76,
-    marginLeft: 110,
-    marginTop: 40,
+    marginTop: 25,
   },
   header: {
-    marginTop: 30,
+    marginTop: 15,
     height: 48,
     fontFamily: 'Poppins',
     fontStyle: 'normal',
@@ -92,7 +89,7 @@ const styles = StyleSheet.create({
   },
   bgHeader: {
     height: 48,
-    width: 428,
+    width: 'auto',
     marginTop: 10,
     backgroundColor: '#5B995A',
   },
@@ -129,7 +126,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     alignSelf: 'center',
-    marginTop: 30,
+    marginTop: 20,
   },
   buttonText: {
     width: 58,
@@ -151,7 +148,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     textAlign: 'center',
     color: '#5B995A',
-    marginTop: 20,
+    marginTop: 10,
   },
 });
 export default PrefScreen;
