@@ -18,39 +18,39 @@ const PrefScreen = () => {
         </View>
         <View>
           <View style={styles.label1}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: '5%'}}>
               <Text style={styles.optionLabel}>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: '5%'}}>
               <Text>Diabetes</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{marginLeft: 180, marginTop: 20}}>
+          <TouchableOpacity style={{marginLeft: 180, marginTop: '5%'}}>
             <Text style={styles.optionLabel}>General Welness</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
+          <TouchableOpacity style={{marginLeft: 60, marginTop: '5%'}}>
             <Text style={styles.optionLabel}>Blood Pressure</Text>
           </TouchableOpacity>
           <View style={{display: 'flex', flexDirection: 'row'}}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: '5%'}}>
               <Text style={styles.optionLabel}>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: '5%'}}>
               <Text style={styles.optionLabel}>Vitality</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{alignSelf: 'center', marginTop: 20}}>
+          <TouchableOpacity style={{alignSelf: 'center', marginTop: '5%'}}>
             <Text style={styles.optionLabel}>Digestion</Text>
           </TouchableOpacity>
           <View style={{display: 'flex', flexDirection: 'row'}}>
-            <TouchableOpacity style={{marginLeft: 60, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 60, marginTop: '5%'}}>
               <Text>Diabetes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft: 120, marginTop: 20}}>
+            <TouchableOpacity style={{marginLeft: 120, marginTop: '5%'}}>
               <Text style={styles.optionLabel}>Know Your Body</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={{alignSelf: 'center', marginTop: 20}}>
+          <TouchableOpacity style={{alignSelf: 'center', marginTop: '5%'}}>
             <Text style={styles.optionLabel}>Weight Management</Text>
           </TouchableOpacity>
         </View>
@@ -75,10 +75,10 @@ const styles = StyleSheet.create({
   logo1: {
     width: 77,
     height: 76,
-    marginTop: 25,
+    marginTop: '5%',
   },
   header: {
-    marginTop: 15,
+    marginTop: '3%',
     height: 48,
     fontFamily: 'Poppins',
     fontStyle: 'normal',
@@ -88,9 +88,8 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   bgHeader: {
-    height: 48,
+    height: '12%',
     width: 'auto',
-    marginTop: 10,
     backgroundColor: '#5B995A',
   },
   header2: {
@@ -102,7 +101,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#ffffff',
     textAlign: 'center',
-    marginTop: 10,
+    marginTop: '3%',
   },
   optionLabel: {
     height: 23,
@@ -126,7 +125,6 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     alignSelf: 'center',
-    marginTop: 20,
   },
   buttonText: {
     width: 58,
@@ -148,7 +146,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     textAlign: 'center',
     color: '#5B995A',
-    marginTop: 10,
+    marginTop: '3%',
   },
 });
 export default PrefScreen;

@@ -127,12 +127,12 @@ const styles = StyleSheet.create({
     width: 77,
     height: 76,
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: '8%',
   },
   header: {
     fontFamily: 'Poppins',
     width: 272,
-    marginTop: 40,
+    marginTop: '8%',
     alignSelf: 'center',
     fontStyle: 'normal',
     fontWeight: '400',
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: '8%',
   },
   inputImage: {
     position: 'absolute',
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     color: '#5A995E',
   },
   footerImg: {
-    marginTop: 25,
+    marginTop: '5%',
     display: 'flex',
     flexDirection: 'row',
     marginRight: 10,

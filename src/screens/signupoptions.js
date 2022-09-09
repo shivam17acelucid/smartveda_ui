@@ -46,14 +46,14 @@ const SignupOptions = ({navigation}) => {
           />
           <Text style={styles.option}>Signup Using Facebook </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} onPress={redirectgoogle}>
+        <TouchableOpacity style={styles.button1} onPress={redirectgoogle}>
           <Image
             source={require('../assets/images/Google.png')}
             style={{marginTop: 10, marginLeft: 20}}
           />
           <Text style={styles.option}>Signup Using Google</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button3} onPress={redirectOtpSignup}>
+        <TouchableOpacity style={styles.button1} onPress={redirectOtpSignup}>
           <Image
             source={require('../assets/images/iPhone.png')}
             style={{marginTop: 10, marginLeft: 20}}
@@ -65,7 +65,7 @@ const SignupOptions = ({navigation}) => {
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          marginTop: 15,
+          marginTop: '2%',
           marginRight: 50,
           width: 'auto',
           marginLeft: 50,
@@ -104,18 +104,17 @@ const styles = StyleSheet.create({
       'radialGradient(155.73% 44.98% at 46.85% 2.81%, rgba(255, 255, 255, 0.23) 0%, rgba(91, 153, 90, 0.25) 97.23%), #FFFFFF',
   },
   box1: {
-    paddingTop: 10,
     alignItems: 'center',
+    alignSelf: 'center',
   },
   image: {
     width: 77,
     height: 76,
-    marginTop: 20,
+    marginTop: '8%',
   },
   header: {
     fontFamily: 'Poppins',
     width: 151,
-    marginTop: 15,
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: 40,
@@ -125,8 +124,8 @@ const styles = StyleSheet.create({
     textShadow: '0 4 4 rgba(0, 0, 0, 0.25)',
   },
   box2: {
-    marginLeft: 40,
-    marginRight: 40,
+    marginLeft: '10%',
+    marginRight: '10%',
   },
   button1: {
     width: 'auto',
@@ -134,32 +133,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#DEEADE',
     boxShadow: '-1.18 -1.18 6.5368 #FFFFFF, 1.18 1.18 6.5368 #A0CCA0',
     borderRadius: 50,
-    marginTop: 15,
-    marginBottom: 20,
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  button2: {
-    width: 'auto',
-    height: 47,
-    backgroundColor: '#DEEADE',
-    boxShadow: '-1.18 -1.18 6.5368 #FFFFFF, 1.18 1.18 6.5368 #A0CCA0',
-    borderRadius: 50,
-    marginTop: 15,
-    marginBottom: 20,
-    marginRight: 20,
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  button3: {
-    width: 'auto',
-    height: 47,
-    backgroundColor: '#DEEADE',
-    boxShadow: '-1.18 -1.18 6.5368 #FFFFFF, 1.18 1.18 6.5368 #A0CCA0',
-    borderRadius: 50,
-    marginTop: 15,
-    marginBottom: 20,
-    marginRight: 20,
+    marginTop: '5%',
+    marginBottom: '5%',
     display: 'flex',
     flexDirection: 'row',
   },
@@ -199,13 +174,13 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginTop: 25,
     alignSelf: 'center',
     paddingLeft: 60,
     paddingRight: 60,
+    marginTop: '4%',
   },
   buttonText: {
-    width: 140,
+    width: 'auto',
     height: 23,
     fontFamily: 'Poppins',
     fontStyle: 'normal',
@@ -224,7 +199,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 22,
     alignSelf: 'center',
-    marginTop: 40,
+    marginTop: '7%',
   },
   footerText: {
     color: '#28282B',

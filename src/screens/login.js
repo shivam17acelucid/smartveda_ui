@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    marginTop: 20,
+    marginTop: '4%',
   },
   innerText: {
     width: 60,
@@ -295,11 +295,11 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignSelf: 'center',
-    marginTop: 10,
+    marginTop: '2%',
     marginRight: 10,
   },
   footertext: {
-    marginTop: 5,
+    marginTop: 4,
     textAlign: 'center',
     height: 23,
     fontFamily: 'Poppins',
