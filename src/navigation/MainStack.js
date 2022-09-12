@@ -27,7 +27,9 @@ const App = () => {
 
   return (
     <NavigationContainer linking={linking}>
-      <Stack.Navigator initialRouteName="welcome">
+      <Stack.Navigator
+        initialRouteName="welcome"
+        screenOptions={{headerShown: false}}>
         <Stack.Screen name="welcome" component={SignupOptions} />
         <Stack.Screen name="signup" component={Signup} />
         <Stack.Screen name="login" component={Login} />
