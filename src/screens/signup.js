@@ -56,7 +56,7 @@ function Signup({navigation}) {
         if (errors) {
           console.log(errors);
           // Alert.alert('Warning', 'Enter Correct Email Address OR Password');
-          Toast.show('Email Already Exists');
+          Toast.show('Email Already Exists Or not Valid Email');
         } else {
           navigation.navigate('login');
         }
@@ -178,12 +178,12 @@ const styles = StyleSheet.create({
     width: 77,
     height: 76,
     alignSelf: 'center',
-    marginTop: 25,
+    marginTop: '12%',
   },
   header: {
     fontFamily: 'Poppins',
     width: 'auto',
-    marginTop: 15,
+    marginTop: '10%',
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: 40,
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   box2: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: '4%',
   },
   inputbox: {
     display: 'flex',

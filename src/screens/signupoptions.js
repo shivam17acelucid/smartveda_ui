@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   image: {
     width: 77,
     height: 76,
-    marginTop: '8%',
+    marginTop: '15%',
   },
   header: {
     fontFamily: 'Poppins',

@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   logo1: {
     width: 77,
     height: 76,
-    marginTop: '5%',
+    marginTop: '10%',
   },
   header: {
     marginTop: '3%',
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     height: '12%',
     width: 'auto',
     backgroundColor: '#5B995A',
+    marginTop: '5%',
   },
   header2: {
     height: 23,

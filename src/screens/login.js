@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
     width: 77,
     height: 76,
     alignSelf: 'center',
-    marginTop: 30,
+    marginTop: '15%',
   },
   header: {
     fontFamily: 'Poppins',
