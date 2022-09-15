@@ -27,11 +27,11 @@ function Signup({navigation}) {
   };
 
   const redirectgoogle = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/google');
+    Linking.openURL('http://3.110.155.54:5000/auth/google');
   };
 
   const redirectFacebook = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/facebook');
+    Linking.openURL('http://3.110.155.54:5000/auth/facebook');
   };
 
   const showPassword = () => {
@@ -39,7 +39,7 @@ function Signup({navigation}) {
   };
 
   const signup = () => {
-    fetch('http://3.108.53.130:5000/signup', {
+    fetch('http://3.110.155.54:5000/signup', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

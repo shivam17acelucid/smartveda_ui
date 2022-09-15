@@ -23,11 +23,11 @@ function Login({navigation}) {
   };
 
   const redirectgoogle = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/google');
+    Linking.openURL('http://3.110.155.54:5000/auth/google');
   };
 
   const redirectFacebook = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/facebook');
+    Linking.openURL('http://3.110.155.54:5000/auth/facebook');
   };
 
   const redirectOtpSignup = () => {
@@ -39,7 +39,7 @@ function Login({navigation}) {
   };
 
   const login = () => {
-    fetch('http://3.108.53.130:5000/login', {
+    fetch('http://3.110.155.54:5000/login', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

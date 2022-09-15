@@ -22,11 +22,11 @@ const SignupOptions = ({navigation}) => {
   };
 
   const redirectgoogle = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/google');
+    Linking.openURL('http://3.110.155.54:5000/auth/google');
   };
 
   const redirectFacebook = () => {
-    Linking.openURL('http://3.108.53.130:5000/auth/facebook');
+    Linking.openURL('http://3.110.155.54:5000/auth/facebook');
   };
 
   return (

@@ -23,7 +23,7 @@ function OtpRegister({navigation}) {
 
   const otpRegister = () => {
     dispatch(setMobile(phone));
-    fetch('http://3.108.53.130:5000/otpsignup', {
+    fetch('http://3.110.155.54:5000/otpsignup', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

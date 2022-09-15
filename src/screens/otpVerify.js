@@ -21,7 +21,7 @@ function OtpVerify({navigation}) {
 
   const otpVerify = () => {
     let data = otp1 + otp2 + otp3 + otp4;
-    fetch('http://3.108.53.130:5000/otpverify', {
+    fetch('http://3.110.155.54:5000/otpverify', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
