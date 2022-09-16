@@ -168,8 +168,9 @@ function Signup({navigation}) {
 }
 const styles = StyleSheet.create({
   container: {
-    height: 'auto',
+    height: '100%',
     width: 'auto',
+    backgroundColor: 'rgba(91, 153, 90, 0.25)',
   },
   box1: {
     alignItems: 'center',

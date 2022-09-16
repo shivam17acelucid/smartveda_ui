@@ -67,7 +67,8 @@ const PrefScreen = () => {
 const styles = StyleSheet.create({
   container: {
     width: 'auto',
-    height: 'auto',
+    height: '100%',
+    backgroundColor: 'rgba(91, 153, 90, 0.25)',
   },
   box1: {
     alignItems: 'center',

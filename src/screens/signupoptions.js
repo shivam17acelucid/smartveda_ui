@@ -99,13 +99,13 @@ const SignupOptions = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     width: 'auto',
-    height: 'auto',
-    backgroundColor:
-      'radialGradient(155.73% 44.98% at 46.85% 2.81%, rgba(255, 255, 255, 0.23) 0%, rgba(91, 153, 90, 0.25) 97.23%), #FFFFFF',
+    height: '100%',
+    backgroundColor: 'rgba(91, 153, 90, 0.25)',
   },
   box1: {
     alignItems: 'center',
     alignSelf: 'center',
+    height: '40%',
   },
   image: {
     width: 77,
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontFamily: 'Poppins',
+    marginTop: '3%',
     width: 151,
     fontStyle: 'normal',
     fontWeight: '400',
@@ -126,6 +127,7 @@ const styles = StyleSheet.create({
   box2: {
     marginLeft: '10%',
     marginRight: '10%',
+    height: '34%',
   },
   button1: {
     width: 'auto',
@@ -165,6 +167,9 @@ const styles = StyleSheet.create({
     color: '#5A995E',
     marginLeft: 10,
     marginRight: 10,
+  },
+  box3: {
+    height: '26%',
   },
   signupButton: {
     width: 'auto',
